@@ -1,4 +1,4 @@
-name             'chef-sample'
+name             'sample_cb'
 maintainer       'Sirajudheen'
 maintainer_email 'sirajudheen.mohamed.ali@sap.com'
 license          'All rights reserved'
