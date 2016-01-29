@@ -7,11 +7,11 @@
 # All rights reserved - Do Not Redistribute
 #
 
-myuser = node[:chef-sample][:the_owner]   
+myuser = node[:sample_cb][:the_owner]   
 
-directory node[:chef-sample][:the_dirname] do
+directory node[:sample_cb][:the_dirname] do
   owner     myuser
   group     myuser
-  mode      node[:chef-sample][:the_perms]
+  mode      node[:sample_cb][:the_perms]
   action    :create
 end
