@@ -15,3 +15,15 @@ directory node[:sample_cb][:the_dirname] do
   mode      node[:sample_cb][:the_perms]
   action    :create
 end
+
+# platform
+# platform_family
+# value_for_platform
+# value_for_platform_family
+
+case node[:platform]
+  when 'redhat' , 'centos'
+    file "/tmp/os.txt" do
+      action :create
+    end
+end
