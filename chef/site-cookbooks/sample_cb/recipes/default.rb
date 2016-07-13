@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-myuser = node[:sample_cb][:the_owner]   
+myuser = node[:sample_cb][:the_owner]
 
 directory node[:sample_cb][:the_dirname] do
   owner     myuser
@@ -20,10 +20,10 @@ end
 # platform_family
 # value_for_platform
 # value_for_platform_family
-
+#- #{node[:platform_family]}
 case node[:platform]
   when 'redhat' , 'centos'
     file "/tmp/os.txt" do
-      action :create
+      content "#{node[:platform]}"
     end
 end

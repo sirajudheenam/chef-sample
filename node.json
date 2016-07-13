@@ -1,2 +1,6 @@
-{   "run_list": [ "recipe[sample_cb]" ]
+{   "run_list": [ "recipe[sample_cb]" ],
+	"sample_cb": {
+		"the_perms": "777",
+		"the_dirname": "/tmp/sample_overloading"
+	}
 }
